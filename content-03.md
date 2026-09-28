@@ -113,7 +113,30 @@ Ek **group** = **users ka ek bucket** jinhe **same permissions** chahiye hoti ha
 
 **Example:** Company mein ek "**Developers**" naam ka group banaya jata hai. Jitne bhi developers hain unhe is group mein daal diya jata hai — ab agar developers ko kisi naye tool ka access dena ho, to sirf **group ki permission** update karni padti hai, har developer ko alag se nahi dena padta.
 
-> **Note:** IAM Role aur IAM Policies agli class mein sir detail se cover karenge — abhi sirf User aur Group tak samajhna kaafi hai.
+### IAM Role
+Ek **role** = **permissions ka ek set jo temporarily pehna ja sakta hai** kisi user, kisi application, ya kisi AWS service ke dwara. Ye kisi ek person ke sath **hamesha ke liye tied nahi** hota. Roles **temporary credentials** use karte hain.
+
+**Example:** Ek **EC2 server** ko S3 storage bucket se data padhna hai. Server mein password store karne ki bajaye, server ek role "**assume**" karta hai jo use bucket padhne ki permission deta hai. Password kahin likha hi nahi, isliye leak hone ka darr bhi nahi.
+
+**Yaad rakho:** User = ek permanent identity (jaise Sara). Role = ek temporary "topi" jo koi bhi zaroorat par pehen sakta hai aur kaam khatam hone par utar deta hai.
+
+### IAM Policy
+Ek **policy** = ek **document (JSON format mein likha hua)** jo bilkul batata hai ke **kya allowed hai ya denied hai**. Policies ko **users, groups, ya roles** ke sath attach kiya jata hai.
+
+**Policies ki do kisme hain:**
+- **Managed policies** = AWS ki bani banai, **ready-to-use** policies
+- **Custom policies** = wo policies jo **tum khud likhti ho**, apni zaroorat ke hisaab se
+
+**Example:** AWS ki ek ready-made policy hoti hai jo sirf S3 ko **read-only** access deti hai. Tum use seedha "Developers" group ke sath attach kar sakti ho (managed policy). Agar tumhe aisi rule chahiye ke "sirf ek khaas bucket ko padho, baaki ko nahi", to tum apni **custom policy** likhogi.
+
+### Office Building Analogy (User, Group, Role, Policy ek saath)
+Ek office building socho:
+- **User** = ek employee ka **ID badge**
+- **Group** = ek **department**, jahan sab ka badge **same darwaze** kholta hai
+- **Role** = ek **visitor badge** jo koi bhi **temporarily** khaas kamron ke liye le sakta hai
+- **Policy** = wo **likha hua rule** ke kaunse darwaze badge kholega
+
+**Example:** Sara ka apna ID badge hai (User). Wo "Developers" department mein hai (Group), isliye engineering floor ke darwaze khulte hain. Ek contractor aaya jo sirf server room dekhega, use ek din ka visitor badge (Role) diya. Kaun sa badge kaun sa darwaza kholega, ye sab **likha hua rule (Policy)** decide karta hai.
 
 ---
 
