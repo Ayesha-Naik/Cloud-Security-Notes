@@ -1,4 +1,4 @@
-# Class 3 — Migration, Shared Responsibility & IAM Basics
+# Class 3 — Migration, Shared Responsibility & IAM Basics 
 
 ## 1. Cloud Migration — The 6 R's
 
