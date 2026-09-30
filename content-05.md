@@ -30,8 +30,6 @@ EC2 tumhe **Option B** deta hai — resources jitne use karo, **usi hisaab se pa
 - **AWS manage karta hai:** underlying **physical infrastructure** (asli hardware, data center)
 - **Tum manage karti ho:** **OS** aur jo bhi tum **instance ke andar run** karti ho (apps, data)
 
-*(Ye Class 4 ke "Shared Responsibility Model" ka EC2-specific example hai — yaad rakho: EC2 IaaS hai, isliye tum sabse zyada manage karti ho.)*
-
 ---
 
 ## 3. EC2 Instance kya hai?
@@ -169,8 +167,6 @@ AWS aksar **kai instance families** deta hai, alag-alag workloads ke liye. **Tum
 - Machine Learning
 - Graphics
 - Scientific Computing
-
-*(Note: Handwritten notes mein numbering "T1, T2, T3... T5" thi lekin AWS real-world naming ismein thodi alag hoti hai jaise M (General Purpose), C (Compute Optimized), R (Memory Optimized), I (Storage Optimized), P/G (Accelerated Computing) — ye numbering apne sir ke page se verify kar lena, isliye jaisa page pe likha tha waisa hi rakha hai.)*
 
 ---
 
