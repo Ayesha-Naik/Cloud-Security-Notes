@@ -1,4 +1,4 @@
-# Class 10 — IAM Policies in Depth (Writing a Keycard)
+# Class 11 — IAM Policies in Depth (Writing a Keycard)
 
 ## 1. Policy Likhna — "Keycard" Banane Ka Tareeqa
 
