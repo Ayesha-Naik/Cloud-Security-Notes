@@ -1,4 +1,4 @@
-# Class 9 — EC2 Hardening (Server ko Secure Banana)
+# Class 10 — EC2 Hardening (Server ko Secure Banana)
 
 ## 1. Hardening kya hai?
 
