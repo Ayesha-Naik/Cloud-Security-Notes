@@ -11,7 +11,7 @@
 8. CloudWatch Agent (extra server data)
 9. Sab kuch ek saath kaise kaam karta hai
 10. CloudWatch vs CloudTrail
-11. Security ke nazariye se CloudWatch
+11. Security ke nazariye se CloudWatch.
 
 ---
 
